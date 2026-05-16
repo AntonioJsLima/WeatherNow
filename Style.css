@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap');
+:root{
+    --background-color1: #0e1b3b;
+    --background-color2: #193884;
+    --background-color3: #0b072e;
+    --translucid-color: rgba(255,255,255,0.08);
+    --color-grey-text: #c9c9c9; 
+    --border-color: 1px solid rgba(255, 255, 255, 0.1);
+    --border-color2: 1px solid rgba(255, 255, 255, 0.2)
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'AKT';
+    color: white;
+    letter-spacing: 1px;
+}
+body{
+        background: linear-gradient(
+        150deg,
+            var(--background-color1) 0%,
+            var(--background-color2) 50%,
+            var(--background-color3) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+p {
+    font-weight: 100;
+    letter-spacing: 0cap;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.right_info{
+    height: 580px;
+    width: 550px;
+    background-color: var(--translucid-color);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: var(--border-color);
+}
+.left_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+.left_info h1{
+    font-size: 45px;
+    margin-bottom: 22px;
+}
+.left_info p{
+    margin-bottom: 22px;
+}
+.bar{
+    background-color: var(--translucid-color);
+    height: 1px;
+    width: 100%;
+}
+.titulo{
+    margin: 40px 0 30px 170px;
+}
+
+input[type="text"]{
+    background-color: rgba(255, 255, 255, 0.00);
+    border: none;
+    outline: none;
+    width: 330px;
+    font-size: 18px;
+    color: white;
+}
+input:focus{
+    color: white !important;
+}
+input::placeholder{
+    color: var(--color-grey-text);
+    font-size: 15px;
+    font-weight: 200;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+
+    -webkit-text-fill-color: white !important;
+
+    background-color: transparent !important;
+
+    transition: background-color 5000s ease-in-out 0s;
+}
+.input_blur{
+    background-color: var(--translucid-color);
+    padding: 10px 9px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    backdrop-filter: blur(10px);
+    border: var(--border-color);
+}
+.input_blur p{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    
+}
+.p_Exemplo{
+    font-size: 14px;
+    color: var(--color-grey-text);
+}
+.input_blur button{
+    color: black;
+    padding: 14px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.input_text_lupa{
+    display: flex;
+}
+.input_text_lupa p{
+    display: flex;
+    align-items: center;
+}
+.header_tempo{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 35px 10px 35px;
+}
+#emoji_tempo{
+    font-size: 50px;
+
+}
+#cidade{
+    margin-top: 10px;
+}
+#pais{
+    color: var(--color-grey-text)
+}
+#temperatura{
+    font-size: 80px;
+} 
+.Temp_container{
+    display: flex;
+    align-items: baseline;
+}
+.container_total_Temp{
+    margin-left: 35px;
+}
+.ºC{
+    font-size: 25px;
+}
+#status_tempo{
+    font-weight: 300;
+}
+.more_info_cards{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(200px - 20px);
+    border-radius: 12px;
+    padding: 25px 20px;
+    border: var(--border-color);
+}
+.more_info_cards p{
+    color: var(--color-grey-text);
+    font-size: 14px;
+    margin-bottom: 14px;   
+}
+.card_font_size{
+    font-size: 20px;
+}
+.more_info{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2.2fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    margin: 0 35px;
+    margin-top: 50px;
+}

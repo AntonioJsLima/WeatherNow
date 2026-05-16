@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body> 
+        <header>
+            <div class="titulo">
+                <h2>WeatherNow</h2>
+                <p>Consulte o clima de qualquer cidade</p>
+            </div>
+            <div class="bar"></div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left_info">
+                    <h1>Veja o clima em <br> tempo real</h1>
+                    <p>Pesquise qualquer cidade e visualize temperatura, umidade,<br> vento e outras informações climáticas.</p>
+                    <div class="input_blur">
+                        <div class="input_text_lupa">
+                            <p>🔍</p>
+                            <input id="input_cidade" type="text" placeholder="Digite o nome da Cidade">
+                        </div>
+                        <button id="btn_buscar">Buscar</button>
+                    </div>
+                    <p class="p_Exemplo">Exemplo: São Paulo, Goiânia, Rio de Janeiro...</p>
+                </div>
+                <div class="right_info">
+                    <div class="header_tempo">
+                        <div>
+                            <p id="pais">BR</p>
+                            <h1 id="cidade">São Paulo</h1>
+                        </div>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Icone Tempo" id="img_icon">
+                    </div>
+                    <div class="container_total_Temp">
+                        <div class="Temp_container">
+                            <h1 id="temperatura">27</h1>
+                            <p class="ºC">ºC</p>
+                        </div>
+                        <p id="status_tempo">Ensolarado</p>
+                    </div>
+                    <div class="more_info">
+                        <div class="more_info_cards">
+                            <p>Max-Min</p>
+                            <h3 id="min_max" class="card_font_size">32ºC-22ºC</h3> 
+                        </div>
+                        <div class="more_info_cards">
+                            <p>Sensação</p>
+                            <h3 id="sensação" class="card_font_size">22ºC</h3> 
+                        </div><div class="more_info_cards">
+                            <p>Umidade</p>
+                            <h3 id="umidade" class="card_font_size">74%</h3> 
+                        </div><div class="more_info_cards">
+                            <p>Vento</p>
+                            <h3 id="vento" class="card_font_size">20 km/h</h3> 
+                        </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="Script.js"></script>
+</html>
