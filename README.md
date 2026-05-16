@@ -77,5 +77,6 @@ Praticar integração com APIs externas, manipulação de dados em JavaScript e 
 
 Antônio de Jesus
 
-LinkedIn: [SEU_LINK]
-GitHub: [SEU_LINK]
+<a href="www.linkedin.com/in/antoniodejesuslima">LinkedIn</a>
+
+<a href="https://github.com/AntonioJsLima">GitHub</a>
